@@ -25,7 +25,7 @@ async function run(): Promise<void> {
       core.getInput('notification-summary') || 'GitHub Action Notification'
     const notificationColor = core.getInput('notification-color') || '0b93ff'
     const timezone = core.getInput('timezone') || 'UTC'
-    const title = core.getInput('title') || 'ISSUE가 등록되었습니다'
+    const html_url  = core.getInput('html_url ') || ''
 
     const timestamp = moment()
       .tz(timezone)
@@ -54,7 +54,7 @@ async function run(): Promise<void> {
       sha,
       repoUrl,
       timestamp,
-      title
+      html_url
     )
 
     console.log(messageCard)
