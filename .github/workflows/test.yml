@@ -22,14 +22,14 @@ jobs:
     - uses: ./
       with: 
         github-token: ${{ github.token }}
-        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        ms-teams-webhook-uri: https://nexcubecorp.webhook.office.com/webhookb2/16b38c7d-0902-4d36-a51f-95c53dcf9eb4@41ac1736-61c2-48f8-9e56-47d52fab75af/IncomingWebhook/26b23e8078554e3e817b07f6c2050309/03c282bb-bb85-4de1-a2b1-835047df39fa
         notification-summary: Deployment Started 
         notification-color: 17a2b8
         timezone: America/Denver 
     - uses: ./
       with: 
         github-token: ${{ github.token }}
-        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        ms-teams-webhook-uri: https://nexcubecorp.webhook.office.com/webhookb2/16b38c7d-0902-4d36-a51f-95c53dcf9eb4@41ac1736-61c2-48f8-9e56-47d52fab75af/IncomingWebhook/26b23e8078554e3e817b07f6c2050309/03c282bb-bb85-4de1-a2b1-835047df39fa
         notification-summary: Warning! Something Not Quite Right 
         notification-color: ffc107
         timezone: America/Denver 
@@ -43,14 +43,14 @@ jobs:
     - uses: ./
       with: 
         github-token: ${{ github.token }}
-        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        ms-teams-webhook-uri: https://nexcubecorp.webhook.office.com/webhookb2/16b38c7d-0902-4d36-a51f-95c53dcf9eb4@41ac1736-61c2-48f8-9e56-47d52fab75af/IncomingWebhook/26b23e8078554e3e817b07f6c2050309/03c282bb-bb85-4de1-a2b1-835047df39fa
         notification-summary: Whew! Everything is right with the world again! 
         notification-color: 28a745 
         timezone: America/Denver 
     - uses: ./
       with: 
         github-token: ${{ github.token }}
-        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        ms-teams-webhook-uri: https://nexcubecorp.webhook.office.com/webhookb2/16b38c7d-0902-4d36-a51f-95c53dcf9eb4@41ac1736-61c2-48f8-9e56-47d52fab75af/IncomingWebhook/26b23e8078554e3e817b07f6c2050309/03c282bb-bb85-4de1-a2b1-835047df39fa
         notification-summary: "Emojify! &#x1F6A2​​ &#x2705;"
         notification-color: 28a745 
         timezone: America/Denver 
