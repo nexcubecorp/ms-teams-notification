@@ -23,7 +23,7 @@ export function createMessageCard(
     '@context': 'https://schema.org/extensions',
     summary: notificationSummary,
     themeColor: notificationColor,
-    title: title,
+    title: notificationSummary,
     sections: [
       {
         activityTitle: `**CI #${runNum} 이슈가 등록되었습니다** on [${repoName}](${repoUrl})`,
