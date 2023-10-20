@@ -25,7 +25,7 @@ async function run(): Promise<void> {
       core.getInput('notification-summary') || 'GitHub Action Notification'
     const notificationColor = core.getInput('notification-color') || '0b93ff'
     const timezone = core.getInput('timezone') || 'UTC'
-    const html_url  = core.getInput('html_url ') || ''
+    const html_url  = core.getInput('html_url') || ''
 
     const timestamp = moment()
       .tz(timezone)
