@@ -9,7 +9,7 @@ export function createMessageCard(
   sha: string,
   repoUrl: string,
   timestamp: string,
-  title: string
+  html_url : string
 ): any {
   let avatar_url =
     'https://www.gravatar.com/avatar/05b6d8cc7c662bf81e01b39254f88a48?d=identicon'
@@ -26,10 +26,7 @@ export function createMessageCard(
     title: title,
     sections: [
       {
-        activityTitle: `**CI #${runNum} (commit ${sha.substr(
-          0,
-          7
-        )})** on [${repoName}](${repoUrl})`,
+        activityTitle: `**CI #${runNum} 이슈가 등록되었습니다** on [${repoName}](${repoUrl})`,
         activityImage: avatar_url,
         activitySubtitle: `by ${commit.data.commit.author.name} [(@${author.login})](${author.html_url}) on ${timestamp}`
       }
@@ -43,9 +40,9 @@ export function createMessageCard(
       },
       {
         '@context': 'http://schema.org',
-        target: [commit.data.html_url],
+        target: [html_url],
         '@type': 'ViewAction',
-        name: 'View Commit Changes'
+        name: '이슈보기'
       }
     ]
   }
