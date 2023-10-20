@@ -36,7 +36,7 @@ jobs:
     - uses: ./
       with: 
         github-token: ${{ github.token }}
-        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        ms-teams-webhook-uri: https://nexcubecorp.webhook.office.com/webhookb2/16b38c7d-0902-4d36-a51f-95c53dcf9eb4@41ac1736-61c2-48f8-9e56-47d52fab75af/IncomingWebhook/26b23e8078554e3e817b07f6c2050309/03c282bb-bb85-4de1-a2b1-835047df39fa
         notification-summary: OMG!! Something Exploded
         notification-color: dc3545
         timezone: America/Denver 
